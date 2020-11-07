@@ -1,0 +1,93 @@
+body {
+    background: url(../img/balanca_y_metro.jpg) bottom / contain no-repeat;
+    height: 100vh;
+    padding:0;
+    margin: 0;
+}
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    background: mediumseagreen;
+}
+.container {
+    margin-left: 5%;
+    /* width: 95%; */
+}
+label {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+input[type=number]{
+    width: 90%;
+    font-size: 1.3rem;
+    margin-bottom: 2vh;
+    display: block;
+}
+::placeholder {
+    font-size: 1rem;
+}
+.radio-label {
+    display: block;
+}
+button {
+    background: mediumseagreen;
+    border-radius: 5px;
+    margin-top: 2vh;
+    margin-left: 60%;
+    font-size: 1.3rem;
+    transition: background 0.4s linear;
+}
+button:hover {
+    background: rgba(250, 240, 230, 0.575);
+}
+p {
+    font-size: 1.3rem;
+    background: rgba(60, 179, 114, 0.589);
+    width:93%;
+}
+#result {
+    padding: 0 40px;
+}
+
+
+@media only screen and (min-width: 680px) {
+    .container {
+      /* background-color: lightblue; */
+      margin: 0 auto;
+      width: 80%;
+    }
+    .radio-group1 {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    .radio-label {
+        display: inline-block;
+        /* font-size: 1.2rem; */
+    }
+    h1, p {
+        font-size: 1.7rem;
+        padding-top: 1vh;
+    }
+    .hide {
+        display: none;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    #result {
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    radio-label {
+        font-size: 1.7rem;
+    }
+}
